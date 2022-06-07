@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'contact',
+
+    # 3rd party apps
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +139,5 @@ EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 
 # Custom setting to email
 RECIPIENT_ADDRESS = env('RECIPIENT_ADDRESS')
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
